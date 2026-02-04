@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+   <html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!--=============== FAVICON ===============-->
+      <link rel="shortcut icon" href="assets/img/045583A2-37CF-4BB7-89CE-D5D09D51D0EA_1_105_c.jpeg" type="image/x-icon">
+
+      <!--=============== REMIXICONS ===============-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+
+      <!--=============== CSS ===============-->
+      <link rel="stylesheet" href="assets/css/styles.css">
+
+      <title>Responsive portfolio website Kai - Bedimcode</title>
+   </head>
+   <body>
+      <!--==================== HEADER ====================-->
+      <header class="header" id="header">
+         <nav class="nav container">
+            <a href="#" class="nav__logo">KLM</a>
+            <div class="nav__menu" id="nav-menu">
+               <ul class="nav__list">
+                  <li>
+                     <a href="#home" class="nav__link active-link">Home</a>
+                  </li>
+
+                  <li>
+                     <a href="#about" class="nav__link">About</a>
+                  </li>
+
+                  <li>
+                     <a href="#projects" class="nav__link">Projects</a>
+                  </li>
+
+                  <li>
+                     <a href="#resume" class="nav__link">Resume</a>
+                  </li>
+
+                  <li>
+                     <a href="#contact" class="nav__link">Contact</a>
+                  </li>
+               </un>
+
+               <!--  Close Button   -->
+               <div class="nav__close" id="nav-close">
+                  <i class="ri-close-large-line"></i>
+               </div>
+            </div>
+            <!-- Toggle menu -->
+            <div class="nav__toggle" id="nav-toggle">
+               <i class="ri-menu-line"></i>
+            </div>
+         </nav>
+      </header>
+
+      <!--==================== MAIN ====================-->
+      <main class="main">
+         <!--==================== HOME ====================-->
+         <section class="home section" id="home">
+            <div class="home__container container grid">
+               <div class="home__content">
+                  <div class="home__image">
+                     <img src="assets/img/045583A2-37CF-4BB7-89CE-D5D09D51D0EA_1_105_c.jpeg" alt="image" class="home__img">
+                  </div>
+                  <div class="home__social">
+                     <a href="https://www.linkedin.com/" target="_blank" class="home__link">
+                        <i class="ri-linkedin-box-fill"></i>
+                     </a>
+
+                     <a href="https://github.com/kalam-uddin" target="_blank" class="home__link">
+                        <i class="ri-github-fill"></i>
+                     </a>
+                     
+                     <a href="kalam-uddin.github.io/portfolio/" target="_blank" class="home__link">
+                        <i class="ri-dribbble-line"></i>
+                     </a>
+                  </div>
+               </div>
+               <div class="home__data grid">
+                  <p class="home__subtitle">
+                     Hi, I'm a <span id="home-typed"></span>
+                  </p>
+                  <h1 class="home__title">Kalam Uddin</h1>
+
+                  <p class="home__description">
+                     Data-driven professional specializing in Python and SQL programming
+                     and healthcare data analytics, currently pursuing a Master's in Data
+                     Science.
+                  </p>
+
+                  <div class="home__buttons">
+                     <a href="assets/pdf/kalam-resume-26.pdf" download="" target="_blank" class="button">Download CV</a>
+                     <a href="#projects" class="button button__ghost">Projects</a>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <!--==================== ABOUT ====================-->
+         <section class="about section" id="about">
+            <div class="about__container container grid">
+               <div class="about__content">
+                  <div class="about__data">
+                     <h2 class="section__title">About Me</h2>
+
+                     <p class="about__description">
+                        I’m a Data Science graduate student with hands-on experience building and optimizing ETL pipelines, transforming raw data into actionable insights, and working with large datasets—particularly in US healthcare analytics. Skilled in SQL, data modeling, and visualization, I enjoy solving complex problems, collaborating across teams, and delivering data-driven solutions that support informed decision-making.
+                     </p>
+                     <a href="#contact" class="button button__ghost">Contact Me</a>
+                  </div>
+                  <div class="about__skills">
+                     <h3 class="about__subtitle">
+                        <i class="ri-bookmark-3-fill"></i>
+                        <span>Skills</span>
+                     </h3>
+                     <ul class="about__items">
+                        <li class="about__item">SQL</li>
+                        <li class="about__item">Python</li>
+                        <li class="about__item">AWS</li>
+                        <li class="about__item">Snowflake</li>
+                        <li class="about__item">S3</li>
+                        <li class="about__item">Glue</li>
+                        <li class="about__item">Lambda</li>
+                        <li class="about__item">EMR</li>
+                        <li class="about__item">Athena</li>
+                        <li class="about__item">dbt (data build tool)</li>
+                        <li class="about__item">ETO tool (ODI)</li>
+                        <li class="about__item">Git</li>
+                        <li class="about__item">Power BI</li>
+                        <li class="about__item">Tableau</li>
+                        <li class="about__item">Shell Scripting</li>
+                     </ul>
+                  </div>
+               </div>
+
+               <div class="about__image">
+                  <img src="assets/img/DDC7C78C-8765-46C0-ABF2-F7757C6EEAD2_1_105_c.jpeg" alt="image" class="about__img">
+               </div>
+               
+            </div>
+         </section>
+
+         <!--==================== PROJECTS ====================-->
+         <section class="projects section" id="projects">
+            <h2 class="section__title">Projects</h2>
+
+            <div class="projects__container container grid">
+               <article class="projects__card">
+                  <img src="assets/img/Project_DE.png" alt="image" class="image projects_img">
+
+                  <div class="projects__data">
+                     <h3 class="projects__title">Automated Data Pipeline</h3>
+                     <p class="projects__destination">A scalable, serverless ETL pipeline on AWS that processes raw healthcare cost CSV data using AWS Glue, makes it queryable via Amazon Athena, and enables cost transparency insights through Power BI visualizations.</p>
+                     <a href="https://github.com/kalam-uddin/DSCI-6007-03-Team-04" target="_blank" class="button button__ghost">View Project</a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/Spam_Cl.png" alt="image" class="image projects_img">
+
+                  <div class="projects__data">
+                     <h3 class="projects__title">Email Spam Classification</h3>
+                     <p class="projects__destination">An email spam classifier comparing Naive Bayes and BERT, showing how context-aware deep learning outperforms traditional feature-based methods.</p>
+                     <a href="" target="_blank" class="button button__ghost">View Project</a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/RAG.png" alt="image" class="image projects_img">
+
+                  <div class="projects__data">
+                     <h3 class="projects__title">RAG System for Question Answering on the Cricket Rulebook</h3>
+                     <p class="projects__destination">A RAG-based QA system on the cricket rulebook, comparing Llama 3.2, Phi-3, and Mistral for accuracy on complex rules.</p>
+                     <a href="https://github.com/dRoTDM/ragforcricketrules" target="_blank" class="button button__ghost">View Project</a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/power-bi.png" alt="image" class="image projects_img">
+
+                  <div class="projects__data">
+                     <h3 class="projects__title">Interactive Census Analytics: Nepal</h3>
+                     <p class="projects__destination">Developed an interactive Power BI dashboard using Nepal census data to analyze population distribution, demographics, and regional trends through clean, dynamic visualizations.</p>
+                     <a href="https://github.com/kalam-uddin/power-bi-and-dashboarding" target="_blank" class="button button__ghost">View Project</a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/favicon.png" alt="image" class="image projects_img">
+
+                  <div class="projects__data">
+                     <h3 class="projects__title">Project 5</h3>
+                     <p class="projects__destination">Project 5 details</p>
+                     <a href="" target="_blank" class="button button__ghost">View Project</a>
+                  </div>
+               </article>
+
+               <article class="projects__card">
+                  <img src="assets/img/favicon.png" alt="image" class="image projects_img">
+
+                  <div class="projects__data">
+                     <h3 class="projects__title">Project 6</h3>
+                     <p class="projects__destination">Project 6 details</p>
+                     <a href="" target="_blank" class="button button__ghost">View Project</a>
+                  </div>
+               </article>
+            </div>
+         </section>
+
+         <!--==================== RESUME ====================-->
+         <section class="resume section" id="resume">
+            <h2 class="section__title">My Resume</h2>
+
+            <div class="resume__container container grid">
+               <div class="resume__content grid">
+                  <h3 class="resume__subtitle">
+                     <i class="ri-award-fill"></i>
+                     <span>Experience</span>
+                  </h3>
+
+                  <div class="resume__list grid">
+                     <div class="resume__data">
+                        <h3 class="resume__title">Peer Tutor</h3>
+
+                        <div class="resume__info">
+                           <address>University of New Haven</address>
+                           <address>Aug 2025 - Current</address>
+                        </div>
+
+                        <ul class="resume__description">
+                           <li>Provided CRLA Level I–certified academic tutoring to undergraduate and graduate students, applying student-centered learning strategies, clear communication, and collaborative support to improve concept mastery and academic performance.</li>
+                        </ul>
+                     </div>
+
+                     <div class="resume__data">
+                        <h3 class="resume__title">Senior Software Engineer</h3>
+
+                        <div class="resume__info">
+                           <address>Infinite Computer Solutions</address>
+                           <address>Feb 2024 - July 2024</address>
+                        </div>
+
+                        <ul class="resume__description">
+                           <li>Improved end-to-end ETL operations by modernizing data workflows, reducing processing time by 40% and recurring defects by 30%, while ensuring SLA-compliant production data delivery and mentoring new team members.</li>
+                        </ul>
+                     </div>
+
+                     <div class="resume__data">
+                        <h3 class="resume__title">Senior Software Engineer</h3>
+
+                        <div class="resume__info">
+                           <address>Cotiviti Nepal</address>
+                           <address>Aug 2023 - Feb 2024</address>
+                        </div>
+
+                        <ul class="resume__description">
+                           <li>Served as a senior member of the ETL Defect Team, resolving end-to-end data defects across QA, pre-production, production, and post-release environments for enterprise clients. Led onboarding and SQL-focused training for new team members, optimized client scrub scripts to reduce processing time by 20%, and migrated legacy workflows to Oracle Data Integrator (ODI), cutting data processing time by 40%.</li>
+                        </ul>
+                     </div>
+
+                     <div class="resume__data">
+                        <h3 class="resume__title">Senior Software Engineer</h3>
+
+                        <div class="resume__info">
+                           <address>Deerhold Ltd.</address>
+                           <address>Oct 2021 - May 2023</address>
+                        </div>
+
+                        <ul class="resume__description">
+                           <li>Performed specification reviews and data analysis to design optimized Snowflake SQL procedures aligned with client metrics, leveraged AWS services (S3, QuickSight, CodeCommit) to strengthen cloud-based data and visualization workflows, executed production ETL processes with a focus on data quality, and collaborated cross-functionally to deliver efficient, data-driven solutions.</li>
+                        </ul>
+                     </div>
+
+                     <div class="resume__data">
+                        <h3 class="resume__title">Software Engineer</h3>
+
+                        <div class="resume__info">
+                           <address>Cotiviti Nepal</address>
+                           <address>Aug 2018 - Oct 2021</address>
+                        </div>
+
+                        <ul class="resume__description">
+                           <li>Handled day-to-day ETL operations using ODI and legacy scripts, improving data scrubbing efficiency by 25% and reducing processing time by 20% through optimized mappings and scripts. Applied regex-based file import optimizations to cut data import errors by 30%, and strengthened data quality through collaborative analysis and code reviews, reducing delivery defects by 15%.</li>
+                        </ul>
+                     </div>
+
+                     <div class="resume__data">
+                        <h3 class="resume__title">Trainee</h3>
+
+                        <div class="resume__info">
+                           <address>Cotiviti Nepal</address>
+                           <address>Jul 2018 - Aug 2018</address>
+                        </div>
+
+                        <ul class="resume__description">
+                           <li>Built foundational expertise in US healthcare analytics, SDLC processes, data analysis, and PL/SQL.</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="resume__content grid">
+                  <h3 class="resume__subtitle">
+                     <i class="ri-graduation-cap-fill"></i>
+                     <span>Education</span>
+                  </h3>
+
+                  <div class="resume__list grid">
+                     <div class="resume__data">
+                        <h3 class="resume__title">Master of Science in Data Science</h3>
+
+                        <div class="resume__info">
+                           <address>University of New Haven</address>
+                           <address>Aug 2024 - May 2026</address>
+                        </div>
+
+                        <ul class="resume__description">
+                           <li>Completed advanced coursework in Machine Learning, NLP, Deep Learning, Data Engineering, Big Data Analytics, and Cloud Computing, while actively working on research to optimize healthcare data processing pipelines. Collaborate with faculty on industry-focused AI initiatives and build end-to-end Retrieval-Augmented Generation (RAG) systems for applied projects.</li>
+                        </ul>
+                     </div>
+
+                     <div class="resume__data">
+                        <h3 class="resume__title">Bachelor of Science (Information Technology)</h3>
+
+                        <div class="resume__info">
+                           <address>IIMS College, Lovely Professional University</address>
+                           <address>Sep 2012 - Mar 2016</address>
+                        </div>
+
+                        <ul class="resume__description">
+                           <li>Completed coursework in Database Management Systems, Calculus, Web Development, and SDLC; built a full-stack Library Management System using Laravel; and gained foundational programming experience in C, C++, and Visual Basic.</li>
+                        </ul>
+                     </div>
+
+                     <div class="resume__data">
+                        <h3 class="resume__title"></h3>
+
+                        <div class="resume__info">
+                           <address></address>
+                           <address></address>
+                        </div>
+
+                        <p class="resume__description"></p>
+                     </div>
+
+                     <div class="resume__data">
+                        <h3 class="resume__title"></h3>
+
+                        <div class="resume__info">
+                           <address></address>
+                           <address></address>
+                        </div>
+
+                        <p class="resume__description"></p>
+                     </div>
+
+                     <div class="resume__data">
+                        <h3 class="resume__title"></h3>
+
+                        <div class="resume__info">
+                           <address></address>
+                           <address></address>
+                        </div>
+
+                        <p class="resume__description"></p>
+                     </div>
+
+                     <div class="resume__data">
+                        <h3 class="resume__title"></h3>
+
+                        <div class="resume__info">
+                           <address></address>
+                           <address></address>
+                        </div>
+
+                        <p class="resume__description"></p>
+                     </div>
+                  </div>
+               </div>
+            </div>  
+         </section>
+
+         <!--==================== CONTACT ====================-->
+         <section class="contact section" id="contact">
+            <h2 class="section__title">Contact Me</h2>
+
+            <div class="contact__container container grid">
+               <form action="" class="contact__form grid" id="contact-form">
+                  <input type="text" placeholder="Name" name="user_name" required class="contact__input">
+                  <input type="email" placeholder="Email" name="user_email" required class="contact__input">
+                  <textarea placeholder="Message" name="user_message" required class="contact__input contact__area"></textarea>
+               
+                  <button type="submit" class="button">Send Message</button>
+
+                  <p class="contact__message" id="contact-message"></p>
+               </form>
+
+               <div class="contact__content grid">
+                  <div class="contact__data grid">
+                     <address class="contact__address">
+                        <i class="ri-mail-fill"></i>
+                        <span>klmkalam06@gmail.com</span>
+                     </address>
+
+                     <address class="contact__address">
+                        <i class="ri-smartphone-fill"></i>
+                        <span>+1 9876543210</span>
+                     </address>
+
+                     <address class="contact__address">
+                        <i class="ri-map-pin-2-fill"></i>
+                        <span>West Haven, Connecticut, USA</span>
+                     </address>
+
+                     <address class="contact__address">
+                        <i class="ri-time-fill"></i>
+                        <span>Available: Mon-Fri, 9AM-6PM</span>
+                     </address>
+                  </div>
+
+                  <div class="contact__social">
+                     <a href="https://api.whatsapp.com/send?phone=19876543210&text=Hello, more information!" target="_blank" class="contact__link">
+                        <i class="ri-whatsapp-fill"></i>
+                     </a>
+
+                     <a href="https://m.me/bedimcode" target="_blank" class="contact__link">
+                        <i class="ri-messenger-fill"></i>
+                     </a>
+
+                     <a href="https://t.me/telegram" target="_blank" class="contact__link">
+                        <i class="ri-telegram-2-fill"></i>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </main>
+
+      <!--==================== FOOTER ====================-->
+      <footer class="footer">
+         <div class="footer__container container grid">
+            <a href="" class="footer__logo">KLM</a>
+
+            <div class="footer__links">
+               <a href="#home" class="footer__link">Home</a>
+
+               <a href="#about" class="footer__link">About</a>
+
+               <a href="#projects" class="footer__link">Projects</a>
+            </div>
+
+            <div class="footer__social">
+               <a href="https://www.linkedin.com/in/kalam-uddin/" target="_blank" class="footer__social-link">
+                  <i class="ri-linkedin-fill"></i>
+               </a>
+
+               <a href="https://www.instagram.com/iamkalaam/" target="_blank" class="footer__social-link">
+                  <i class="ri-instagram-fill"></i>
+               </a>
+
+               <a href="https://www.facebook.com/imkalam" target="_blank" class="footer__social-link">
+                  <i class="ri-facebook-circle-fill"></i>
+               </a>
+
+               <a href="https://www.youtube.com/@kalamuddin5666" target="_blank" class="footer__social-link">
+                  <i class="ri-youtube-fill"></i>
+               </a>
+            </div>
+         </div>
+         
+         <span class="footer__copy">
+            &#169; All Rights Reserved 2026 
+         </span>
+      </footer>
+
+      <!--========== SCROLL UP ==========-->
+      <a href="#" class="scrollup" id="scroll-up">
+         <i class="ri-arrow-up-line"></i>
+      </a>
+
+      <!--=============== SCROLLREVEAL ===============-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+
+      <!--=============== TYPED JS ===============-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.min.js"></script>
+
+      <!--=============== EMAIL JS ===============-->
+      <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+      <!--=============== MAIN JS ===============-->
+      <script src="assets/js/main.js"></script>
+   </body>
+</html>
